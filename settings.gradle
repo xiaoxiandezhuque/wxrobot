@@ -1,0 +1,2 @@
+include ':app','m_common'
+rootProject.name='wxfuzhu'

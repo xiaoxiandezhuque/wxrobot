@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30mm"
+        android:text="目前接入的机器人是  腾讯ai平台的，需要自行注册账号。\n填写id和key，并在xposed里面打开模块才能正常使用，目前只支持文字的聊天"
+        android:textSize="40mm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40mm"
+        android:text="平台id: "
+        android:textSize="40mm"
+        app:layout_constraintLeft_toLeftOf="@id/tv_explain"
+        app:layout_constraintTop_toBottomOf="@id/tv_explain" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30mm"
+        android:background="@drawable/shape_bg_white_style_5dp"
+        android:hint="请输入平台id"
+        android:paddingLeft="10mm"
+        android:singleLine="true"
+        android:textSize="40mm"
+        app:layout_constraintEnd_toEndOf="@+id/tv_explain"
+        app:layout_constraintStart_toEndOf="@+id/tv_id"
+        app:layout_constraintTop_toTopOf="@id/tv_id" />
+
+
+    <TextView
+        android:id="@+id/tv_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40mm"
+        android:text="平台key:"
+        android:textSize="40mm"
+        app:layout_constraintLeft_toLeftOf="@id/tv_id"
+        app:layout_constraintTop_toBottomOf="@id/tv_id" />
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30mm"
+        android:background="@drawable/shape_bg_white_style_5dp"
+        android:hint="请输入平台key"
+        android:paddingLeft="10mm"
+        android:singleLine="true"
+        android:textSize="40mm"
+        app:layout_constraintEnd_toEndOf="@+id/tv_explain"
+        app:layout_constraintStart_toEndOf="@+id/tv_id"
+        app:layout_constraintTop_toTopOf="@id/tv_key" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="80mm"
+        android:layout_marginTop="50mm"
+        android:background="@drawable/shape_bg_style_5dp"
+        android:text="保存"
+        android:textColor="#fff"
+        android:textSize="40mm"
+        app:layout_constraintEnd_toEndOf="@+id/tv_explain"
+        app:layout_constraintStart_toStartOf="@+id/tv_explain"
+        app:layout_constraintTop_toBottomOf="@id/tv_key" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_print"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="80mm"-->
+    <!--        android:layout_marginTop="50mm"-->
+    <!--        android:background="@drawable/shape_bg_style_5dp"-->
+    <!--        android:text="取出"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textSize="40mm"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tv_explain"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_explain"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/btn_save" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
