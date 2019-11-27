@@ -1,7 +1,7 @@
 # wxrobot
 微信android聊天机器人，基于xposed
 
-目前只支持[腾讯AI开放平台](https://ai.qq.com/)的机器人。请自行注册账号，填写id和key使用。
+目前只支持[腾讯AI开放平台](https://ai.qq.com/)的机器人，只支持微信7.0.7版本。请自行注册账号，填写id和key使用。
 群聊需要@微信账号  机器人才回复
 
 
